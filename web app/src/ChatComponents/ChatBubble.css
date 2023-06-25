@@ -1,0 +1,95 @@
+.messages {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.message {
+    word-wrap: break-word;
+    max-width: 60%;
+    border-radius: 20px;
+    padding: 6px 9px;
+    display: inline-block;
+    font-size: 13px;
+}
+
+.yours {
+    align-items: flex-start;
+}
+
+.yours .message {
+    background-color: #eee;
+    position: relative;
+}
+
+.yours .message.last:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    left: -10px;
+    /* Increase the left value to adjust the position */
+    height: 20px;
+    width: 20px;
+    background: #eee;
+    border-bottom-right-radius: 15px;
+}
+
+
+.yours .message.last:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: -10px;
+    width: 10px;
+    height: 20px;
+    background: white;
+    border-bottom-right-radius: 10px;
+}
+
+.mine {
+    align-items: flex-end;
+}
+
+.mine .message {
+    color: white;
+    margin-left: 25%;
+    background: linear-gradient(to bottom, #075e54 0%, #075e54 100%);
+    background-attachment: fixed;
+    position: relative;
+    right: 10px;
+
+}
+
+.mine .message.last:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    right: -8px;
+    height: 20px;
+    width: 20px;
+    background: linear-gradient(to bottom, #075e54 0%, #075e54 100%);
+    background-attachment: fixed;
+    border-bottom-left-radius: 15px;
+}
+
+.mine .message.last:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: -10px;
+    width: 10px;
+    height: 20px;
+    background-image: url("../../public/lebron.jpg");
+    border-bottom-left-radius: 10px;
+}
+
+.message-time {
+    font-size: 10px;
+    text-align: right;
+    padding-right: 5px;
+}
