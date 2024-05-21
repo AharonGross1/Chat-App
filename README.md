@@ -1,17 +1,17 @@
-# Messaging Program
+# BuzzTalk
 
-This is a texting program comprised of a server, a web app, and an android app.
+This is a texting program comprised of a server, a web app, and an Android app.
 
 ## Client:
 ### Registration and Login
-These pages will allow you to enter the chat if you created a unique user. The identifier is the username, so it must be unique or you won't be able to create the user.
+These pages will allow you to enter the chat if you create a unique user. The identifier is the username, so it must be unique or you won't be able to create the user.
 
 ### Chat page:
 - Adding new users to your contacts - can add only existing users.
 - Sending messages to your contacts.
 - Different chat for each contact.
-- Deleting contacts (note - the chat with that contact will only be deleted for you. The contact will still be able to see the chat he has with you.)
-- Uses Io and Firebase in order to update the chat dynamically without refresh.
+- Deleting contacts (note - the chat with that contact will only be deleted for you. The contact will still be able to see the chat they have with you.)
+- Uses Io and Firebase to update the chat dynamically without refresh.
 - Changing themes via the settings, so you can enjoy the theme you like most.
 
 
